@@ -58,17 +58,18 @@ namespace ConsoleApp2
             int kmAttualiPrivato = 2000;
 
             Console.WriteLine("DIPENDENTE");
-            Console.WriteLine("");
-            Console.WriteLine($"Dipendente: {dipendente.Name}");
-            Console.WriteLine($"Entrata : {dipendente.Entrata}");
-            Console.WriteLine($"Uscita: {dipendente.Uscita}");
+            Console.WriteLine("\n");
+            Console.WriteLine($"Nome del dipendente: {dipendente.Name}");
+            Console.WriteLine($"Entrata del : {dipendente.Entrata}");
+            Console.WriteLine($"Uscita del : {dipendente.Uscita}");
             Console.WriteLine($"Animale Domestico: {dipendente.AnimaleDomestico2.Name}, Tipo: {dipendente.AnimaleDomestico2.Tipo}, Etá: {dipendente.AnimaleDomestico2.Age}");
             Console.WriteLine($"Veicolo Aziendale: {dipendente.VeicoloAziendale.Name}, Descrizione: {dipendente.VeicoloAziendale.Description}");
             Console.WriteLine(dipendente.VeicoloAziendale.KmTagliando(kmAttualiDipendente));
-            Console.WriteLine("");
+            Console.WriteLine("\n");
             Console.WriteLine("ATLETA");
-            Console.WriteLine("");
-            Console.WriteLine($"Atleta: {atleta.Name}");
+            Console.WriteLine("\n");
+            Console.WriteLine($"Nome dell'Atleta: {atleta.Name}");
+            Console.WriteLine($"Si allena da: {atleta.DayAllenamenti} giorni");
             Console.WriteLine($"Animale Domestico: {atleta.AnimaleDomestico.Name}, Tipo: {atleta.AnimaleDomestico.Tipo}, Etá: {atleta.AnimaleDomestico.Age}");
             Console.WriteLine($"Veicolo Privato: {atleta.VeicoloPrivato.Name}, Descrizione: {atleta.VeicoloPrivato.Description}");
             Console.WriteLine(atleta.VeicoloPrivato.KmTagliando(kmAttualiPrivato));
